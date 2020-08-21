@@ -1,0 +1,22 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: OpenDialogue <ivoryttang@gmail.com>
+To: ivory@mit.edu
+Date: Thu, 30 Jul 2020 19:43:00 -0000
+Message-ID: <159613818077.33200.3506400230384151633@jshao_mbp15.guidewire.com>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Reset Email</title>
+</head>
+<body>
+Someone asked for password reset for email ivory@mit.edu.
+Follow the link below:
+http://127.0.0.1:8000/accounts/reset/OA/5im-1d47711cd29e8e5d72f5/
+</body>
+</html>
+-------------------------------------------------------------------------------

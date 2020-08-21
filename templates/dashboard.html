@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "nav_bar_logged_in.html" %}
+<style>
+/* about section */
+.about {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  width: 50%;
+  transform: translate(-40%, -100%);
+  border: 1px solid white;
+  background: white;
+  padding: 5px 10px;
+}
+
+.img_blur {
+  padding: 0px;
+  text-align: center;
+  background-image: url('https://www.promiseresourcenetwork.com/wp-content/uploads/2016/10/Diverse-crowd-of-people-horizontal-620x350.jpg');
+  -webkit-filter: blur(5px);
+  background-size:1600px 800px;
+  color: black;
+  height: 450px;
+}
+
+.buttons {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  position: absolute;
+  top: 360px;
+  left: 55%;
+  transform: translate(10%, 50%);
+  border: 1px solid black;
+  background: #d5dde0;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  border: 1px solid white;
+  background: #d4f2ff;
+  padding: 20px 10px;
+}
+
+.discussion-link {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+  border: 1px solid white;
+  background: #b5c1c7;
+  padding: 50px 30px;
+  width: 30%;
+  height: 78px;
+  transform: translate(5%, 10%);
+  border: 3px solid grey;
+}
+
+.discussion {
+  text-align: left;
+  font-size: 20px;
+  border: 1px solid white;
+  background: #b5c1c7;
+  padding: 40px 30px;
+  width: 53%;
+  transform: translate(65%, -90%);
+  border: 3px solid grey;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div class="img_blur"></div>
+<div class="about">
+    <h1>OpenDialogue</h1>
+    <p><i>Facilitating difficult discussions about race, gender, and more.</i><br><br>
+        Everyone is free to share their opinions and stories while also engaging in meaningful dialogue with those who share similar or different opinions.</p>
+</div>
+
+<a class="buttons" href="where_to_post">Share your opinions</a>
+<a class="buttons" href="top10" style="transform:translate(-110%, 50%)">View others' opinions</a>
+
+
+<div class="description">
+    <h1><i>Be passionate. Be open-minded.</i></h1>
+    <p>Social media and news sites today too often expose us to viewpoints we are likely to agree with. In order to understand the bigger picture,
+        we must learn from each other. This site uses Artificial Intelligence neural networks to analyze and categorize user sentiments in order to help expose you to
+        the voices and stories that often become lost in the increasingly more polarized world we live in today.</p>
+</div>
+
+<div class="discussion-link">
+    Click here <a href="https://www.judyringer.com/resources/articles/we-have-to-talk-a-stepbystep-checklist-for-difficult-conversations.php">here</a> to learn effective methods for open and meaningful discussion.
+</div>
+<div class="discussion">
+    We are here to learn, understand, and empathize. <br> Share your views. Listen to those with different views.
+    Seek to understand why others hold the views they do. You may be surprised at what you find.
+    Find a community with shared opinions. Form connections to those communities different from yours.
+</div>
+</body>
+</html>
+

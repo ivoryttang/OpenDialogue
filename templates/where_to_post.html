@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<div>
+    {% if username != null and username != 'unknown' %}
+    {% include "nav_bar_logged_in.html" %}
+    {% else %}
+    {% include "nav_bar.html" %}
+    {% endif %}
+</div>
+<head>
+    <meta charset="UTF-8">
+    <title>Select Topic</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-color: #ccd1d9;
+        font-size: 30px;
+    }
+    .center {
+        text-align: center;
+        list-style-position: inside;
+        border: 1px solid black;
+        background-color:powderblue;
+        padding: 50px 0px;
+    }
+</style>
+<body>
+    <h1 style="text-align:center;">Pick a Topic</h1>
+
+    <ul class="center">
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='Black Lives Matter'>
+            <li><button type="submit">Black Lives Matter</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='ACA 5'>
+            <li><button type="submit">ACA 5</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='Response to Covid-19'>
+            <li><button type="submit">Response to Covid-19</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='LGBTQ+'>
+            <li><button type="submit">LGBTQ+</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='Affirmative Action'>
+            <li><button type="submit">Affirmative Action</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='ACA 5'>
+            <li><button type="submit">ACA 5</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='The Wage Gap'>
+            <li><button type="submit">The Wage Gap</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='Abortion'>
+            <li><button type="submit">Abortion</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='Sexual Assault'>
+            <li><button type="submit">Sexual Assault</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='2020 Presidential Election'>
+            <li><button type="submit">2020 Presidential Election</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="topic" value='DACA and Dream Act'>
+            <li><button type="submit">DACA and Dream Act</button></li>
+        </form>
+
+        <form action="http://127.0.0.1:3339/post.php" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="username" value='{{ username }}'>
+            <input type="hidden" name="new_topic">
+            <input type="text" placeholder="Topic Name" name="topic">   <button type="submit">Start New Topic</button>
+        </form>
+
+    </ul>
+</body>
+</html>

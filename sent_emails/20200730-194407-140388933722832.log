@@ -1,0 +1,45 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: OpenDialogue <ivoryttang@gmail.com>
+To: ivoryttang@gmail.com
+Date: Thu, 30 Jul 2020 19:44:07 -0000
+Message-ID: 
+ <159613824793.33224.14177657101601223860@jshao_mbp15.guidewire.com>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Reset Email</title>
+</head>
+<body>
+Someone asked for password reset for email ivoryttang@gmail.com.
+Follow the link below:
+http://127.0.0.1:8000/accounts/reset/MQ/5im-369c0d87a9a6290bdbc4/
+</body>
+</html>
+-------------------------------------------------------------------------------
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: OpenDialogue <ivoryttang@gmail.com>
+To: ivoryttang@gmail.com
+Date: Thu, 30 Jul 2020 19:44:07 -0000
+Message-ID: <159613824794.33224.4288663333148047345@jshao_mbp15.guidewire.com>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Reset Email</title>
+</head>
+<body>
+Someone asked for password reset for email ivoryttang@gmail.com.
+Follow the link below:
+http://127.0.0.1:8000/accounts/reset/MTY/5im-7e4a787fc7369c3213a2/
+</body>
+</html>
+-------------------------------------------------------------------------------

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<div>
+    {% if username != null %}
+        {% include "nav_bar_logged_in.html" %}
+    {% else %}
+        {% include "nav_bar.html" %}
+    {% endif %}
+</div>
+<style>
+    body {
+        text-align: center;
+        background-color: #ccd1d9;
+        font-size: 30px;
+    }
+    .center {
+        text-align: center;
+        list-style-position: inside;
+        border: 1px solid black;
+        background-color:powderblue;
+        padding: 50px 0px;
+    }
+    button {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: #cad5e6; /* Green */
+        color: black;
+        font-size: 20px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10</title>
+</head>
+
+<body>
+<h1>
+    Top 10 List
+</h1>
+<ol class="center">
+    <li><form action="http://127.0.0.1:3338/blm.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">Black Lives Matter</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3346/covid-19.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">Response to Covid-19</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3347/LGBTQ+.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">LGBTQ+</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3348/affirmative_action.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">Affirmative Action</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3340/aca5.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">ACA 5</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3349/wage_gap.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">The Wage Gap</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3350/abortion.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">Abortion</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3351/sexual_assault.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">Sexual Assault</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3352/2020Election.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">2020 Presidential Election</button>
+    </form></li>
+    <li><form action="http://127.0.0.1:3353/daca.php">
+        <input type="hidden" name="username" value="{{username}}">
+        <button type="submit">DACA and Dream Act</button>
+    </form></li>
+</ol>
+</body>
+</html>
